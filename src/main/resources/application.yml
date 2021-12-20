@@ -15,9 +15,7 @@ spring:
       ddl-auto: update
       dialect: MySQL8Dialect
  
- 
-
-      
+       
 #  spring:
 #  jackson:
 #    default-property-inclusion: use_defaults/always/non-null/non-empty/non-absent/non-default
