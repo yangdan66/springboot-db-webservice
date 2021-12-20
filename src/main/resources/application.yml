@@ -10,6 +10,7 @@ spring:
     password: Hello1234
     #password: Hello1234!
 
+##
   jpa:
     hibernate:
       ddl-auto: update
