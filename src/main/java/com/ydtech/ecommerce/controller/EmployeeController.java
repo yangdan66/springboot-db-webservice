@@ -26,21 +26,25 @@ public class EmployeeController {
 		this.employeeService = employeeService;
 	}
 
+	// Save Employee to DB
 	@PostMapping("/add")
 	public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee) {
 		return new ResponseEntity<Employee>(employeeService.saveEmployee(employee), HttpStatus.CREATED);
 	}
 
+	// Get All employees in DB
 	@GetMapping("/getAll")
 	public List<Employee> getAllEmployees() {
 		return employeeService.getAllEmployees();
 	}
 
+	// Get employee by Id
 	@GetMapping("{id}")
 	public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") long id) {
 		return new ResponseEntity<Employee>(employeeService.findEmployeeById(id), HttpStatus.OK);
 	}
 
+	// Update employee by id in DB
 	@PutMapping("/{id}")
 	public ResponseEntity<Employee> updateEmployee(@PathVariable("id") long id, @RequestBody Employee employee) {
 		return new ResponseEntity<Employee>(employeeService.updateEmployee(employee, id), HttpStatus.OK);

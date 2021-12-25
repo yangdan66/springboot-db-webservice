@@ -8,14 +8,14 @@
 		<version>2.6.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
 	<groupId>com.ydtech</groupId>
 	<artifactId>springboot-db-webservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-db-webservice</name>
 	<description>Spring Boot Aws backend Demo</description>
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -34,8 +34,6 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<type>jar</type>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
