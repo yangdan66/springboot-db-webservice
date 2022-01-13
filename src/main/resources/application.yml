@@ -3,10 +3,17 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     
     #local url: jdbc:mysql://localhost:3306/testdb?useSSL=false&allowPublicKeyRetrieval=true
-    url: jdbc:mysql://awsbd-test.cyac6dzv6rik.us-east-1.rds.amazonaws.com:3306/testDB?useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: Hello1234   
     #local password: Hello1234!
+    ##########################
+    #url: jdbc:mysql://awsbd-test.cyac6dzv6rik.us-east-1.rds.amazonaws.com:3306/testDB?useSSL=false&allowPublicKeyRetrieval=true
+    #username: root
+    #password: Hello1234  
+    url: jdbc:mysql://mydb:3306/testDB?useSSL=false&allowPublicKeyRetrieval=true
+    #url: jdbc:mysql://192.168.1.113:3306/testDB?useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 8888   
+    
+   
 
 ##
   jpa:
