@@ -5,8 +5,7 @@ pipeline {
         stage('checkout') {
             steps {
                 echo 'start checkout------------'
-                git 'https://github.com/yangdan66/springboot-db-webservice.git'
-
+                git credentialsId: 'yangdan66', url: 'https://github.com/yangdan66/springboot-db-webservice.git'
                 
             }
         }
