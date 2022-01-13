@@ -1,21 +1,15 @@
 pipeline {
     agent any
 
-    tools {
-        // Install the Maven version configured as "M3" and add it to the path.
-        maven "3.8.4"
-    }
-
     stages {
-        stage('Build') {
+        stage('checkout') {
             steps {
-                // Get some code from a GitHub repository
+                echo 'start checkout------------'
                 git 'https://github.com/yangdan66/springboot-db-webservice.git'
 
-             
+                
             }
-        
-  
         }
     }
 }
+
